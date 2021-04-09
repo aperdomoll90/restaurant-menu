@@ -1,3 +1,7 @@
-const {getCoffees} = require('./coffees')
+const {getCoffees,getCoffeesTitles} = require('./getCoffees')
+const {getBeers} = require('./getBeers')
 
-getCoffees('Adrian')
+const costumer = 'Adrian'
+getCoffees(costumer)
+getCoffeesTitles()
+

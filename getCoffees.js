@@ -1,5 +1,5 @@
-const coffees = require('./data/coffee.json')
-const coffees = require('./data/beer.json')
+const coffees = require('./data/allCoffee.json')
+
 
 //console.log("this is my list of coffees", coffees)
 
@@ -14,10 +14,8 @@ coffees.forEach(recipe =>{
 })
 }
 
-exports.getBeers =  (name) => {
-  beers.forEach = (beerRecipe) => {
-      if(beerRecipe.ratings.reviews >= 300 ) {
-        console.log(name,'loves', beerRecipe.name, 'review',beerReview)
-      }
-  })
-  }
+// name this function get coffees and export it
+exports.getCoffeesTitles = function(){
+  const coffeeTitle = coffees.filter(item => item.title)
+  console.log('coffee name', coffeeTitle)
+}
