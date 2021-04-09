@@ -17,5 +17,6 @@ coffees.forEach(recipe =>{
 // name this function get coffees and export it
 exports.getCoffeesTitles = function(){
   const coffeeTitle = coffees.filter(item => item.title)
+  //const coffeeTitle = coffees.filter(function(item){item.title})
   console.log('coffee name', coffeeTitle)
 }

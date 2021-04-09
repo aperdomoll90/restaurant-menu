@@ -3,5 +3,5 @@ const {getBeers} = require('./getBeers')
 
 const costumer = 'Adrian'
 getCoffees(costumer)
-getCoffeesTitles()
+getCoffeesTitles(costumer)
 
