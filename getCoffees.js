@@ -1,5 +1,13 @@
-const coffees = require('./data/allCoffee.json')
+const fetch = require('node-fetch')
 
+let coffees = []
+fetch('https://api.sampleapis.com/coffee/hot')
+.then(response => response.json())
+.then(data => {
+  console.log(data)
+  coffees = data
+})
+.catch(err => console.log('error fetching API', err))
 
 //console.log("this is my list of coffees", coffees)
 
